@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <style>
+       
+      
+        
+        .head{
+            width: 100%;
+            text-align: center;
+            padding: 30px;
+            background-color: white;
+            box-sizing: border-box;
+        }
+        span{
+            color: white;
+            background-color: black;
+        }
+        .home-img{
+            width: 100%;
+            height: 600px;
+          background-image: url(image/blog1.jpg);
+          background-size: cover;
+            position: relative;
+        }
+        .home-txt{
+        position: absolute;
+        top: 200px;
+        color: white;
+        left: 10px;
+        }
+
+        .home-txt button{
+            padding: 12px 20px;
+        }
+        .row{
+            display: flex;
+            box-sizing: border-box;
+           
+        }
+        .col-1{
+            flex: 70%;
+            background-color:lightgray;
+          
+            
+        }
+        .col-2{
+            flex: 30%;
+            /* margin-left: 20px; */
+            background-color:lightgray;
+            padding-right: 20px;
+           
+           
+        }
+
+        .title-img1{
+            width: 100%;
+            height: 500px;
+            background-image: url(image/h3.jpg);
+            background-size: cover;
+            
+        }
+
+        .title-img2{
+            width: 100%;
+            height: 500px;
+            background-image: url(image/hat2.jpg);
+            background-size: cover;
+            
+        }
+        .title-img3{
+            width: 100%;
+            height: 500px;
+            background-image: url(image/walk.jpg);
+            background-size: cover;
+            
+        }
+        .like-box{
+            display: flex;
+            margin-bottom: 40px; ;
+        }
+
+
+        .like{
+            width: 70px;
+            height: 30px;
+           
+            border: 1px solid rgb(221, 209, 209);
+            display: flex;
+            color: black;
+        }
+        .box1{
+            background-image: url(image/like.png);
+            background-size: cover;
+            width: 20px;
+            height: 20px;
+        }
+        .like h4{
+            margin: 0%;
+            padding: 5px;
+        }
+        
+
+        
+        
+        
+        .reply{
+            background-color: black;
+            width: 85px;
+            height: 30px;
+            color: white;
+            display: flex;
+            padding-top: 8px;
+            padding-left: 10px;
+        
+
+            margin-left: 700px;
+            border: none;
+    
+            
+        }
+        .box{
+            width: 15px;
+            height: 15px;
+            background-color: white;
+            color: black;
+            margin-left: 5px; ;
+        }
+      .comment{
+        width: 100%;
+        height: 200px;
+        display: flex;
+      }
+      .com-img{
+        width: 100px;
+        height: 100px;
+        background-image: url(image/com-img.jpg);
+        background-size: cover;
+        margin: 15px 15px;
+       
+      }
+      .com-txt{
+        padding-top: 20px;
+      
+
+      }
+      .c1r1{
+        padding: 10px 10px;
+        margin: 20px 20px;
+        background-color:white;
+
+        
+
+      }
+      .c1r1 h2,h3{
+        text-align: center;
+      }
+
+      .con2h{
+        background-color: black;
+        color: white;
+        height: 60px;
+        padding: 10px 20px;
+      }
+
+      .con2{
+        display: flex;
+        background-color: white;
+        margin-bottom: 3px;
+      }
+
+      .con1{
+        background-image: url(image/name.jpg);
+        background-size: cover;
+        color:white;
+        height: 300px;
+        margin-bottom: 30px;
+        
+        
+      }
+      .con1 h2{
+       padding-top: 170px;
+       padding-left: 10px;
+      }
+      .con1 p{
+        padding-left: 10px;
+      }
+
+      .b-i1{
+        width: 80px;
+        height: 60px;
+        background-image: url(image/com-img.jpg);
+        background-size: cover;
+        margin: 10px 10px;
+      }
+      .b-i2{
+        width: 80px;
+        height: 60px;
+        background-image: url(image/hat1.jpg);
+        background-size: cover;
+        margin: 10px 10px;
+      }
+      .b-i3{
+        width: 80px;
+        height: 60px;
+        background-image: url(image/hat2.jpg);
+        background-size: cover;
+        margin: 10px 10px;
+      }
+      .b-i4{
+        width: 80px;
+        height: 60px;
+        background-image: url(image/hat.jpg);
+        background-size: cover;
+        margin: 10px 10px;
+      }
+     
+
+      .b-t h4{
+        margin-bottom: 0%;
+      }
+      .b-t p{
+        margin-top: 0%;
+      }
+
+      .con3{
+        width: 100%;
+        height: 250px;
+        background-color: white;
+      }
+      .ad-h{
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 50px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        
+      }
+      .ad-h h2{
+        padding-top: 10px;
+      }
+
+     
+    
+    .ad-c{
+        width: 94%;
+        background-color: rgb(232, 225, 225);
+        height: 160px;
+        margin: 10px 10px;
+         text-align: center; 
+      
+        
+    }
+    .ad-c p{
+        padding-top: 60px;
+
+    }
+    .con4{
+        width: 100%;
+        height: 150px;
+        background-color:white;
+    }
+    .con4 button{
+        border: none;
+        padding: 3px 5px;
+        color:lightgrey;
+        margin-top: 10px;
+        color: black;
+        opacity: .8;
+        font-weight: lighter;
+    }
+    button:hover{
+        background-color: black;
+        cursor: pointer;
+        color: white;
+        padding: 6px 6px;
+        
+    }
+    .con5{
+        background-color: white;
+        width: 100%;
+        height: 400px;
+    }
+    .con5-i{
+        display: flex;
+        flex-wrap:wrap;
+        box-sizing: border-box;
+
+    }
+    .img1{
+        width: 175px;
+        height: 150px;
+        background-image: url(image/hat.jpg);
+        background-size: cover;
+        margin: 15px 0px 0px 15px;
+       
+    }
+    .img2{
+        width: 175px;
+        height: 150px;
+        margin: 15px 0px 0px 15px;
+        background-image: url(image/hat1.jpg);
+        background-size: cover;
+    }
+    .img3{
+        background-image: url(image/hat2.jpg);
+        background-size: cover;
+        width: 175px;
+        height: 150px;
+        margin: 15px 0px 0px 15px;
+    }
+    .img4{
+        width: 175px;
+        height: 150px;
+        background-image: url(image/h3.jpg);
+        background-size: cover;
+        margin: 15px 0px 0px 15px;
+       
+
+    }
+    .follow{
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        display: flex;
+    }
+    .f{
+        width: 30px;
+        height: 30px;
+        padding:3px 0px 0px 3px;
+        background-image: url(image/facebook.png);
+        background-size: cover;
+        margin-top: 5px;
+    }
+    .i{
+        width: 30px;
+        height: 30px;
+        padding:3px 0px 0px 3px;
+        background-image: url(image/instagram.png);
+        background-size: cover;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    .t{
+        width: 30px;
+        height: 30px;
+        padding:3px 0px 0px 3px;
+        background-image: url(image/twitter.png);
+        background-size: cover;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    .w{
+        width: 30px;
+        height: 30px;
+        padding:3px 0px 0px 3px;
+        background-image: url(image/whatsapp.png);
+        background-size: cover;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    .s{
+        width: 30px;
+        height: 30px;
+        padding:3px 0px 0px 3px;
+        background-image: url(image/snapchat.png);
+        background-size: cover;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    .subscribe{
+        background-color: white;
+        width: 100%;
+        height: 180px;
+        
+    }
+    input{
+        width: 80%;
+        margin: 0px 20px 0px 20px;
+        margin-bottom: 20px;
+        height: 30px;
+        margin-top: 10px;
+        
+
+    }
+    .subscribe button{
+        width: 80%;
+        height: 30px;
+        margin: 0px 20px 0px 22px;
+        background-color:rgba(255, 0, 0, 0.642);
+        border: none;
+        color: white;
+    }
+   
+  .tag{
+    margin-left: 10px;
+   
+  }
+  .s-t{
+    background-color: white;
+    color: black;
+    margin-left: 30px;
+  }
+    
+  .ct{
+    color: gray;
+    background-color: white;
+    margin-left: 10px;
+    font-size: small;
+  }
+
+    
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>JANE BLOGLIFE</h1>
+        <p>Welcome to the blog of <span>Jane's world</span></p>
+    </div>
+    <div class="home-img">
+        <div class="home-txt">
+            <h2>Jane's</h2>
+            <h1>FASHION BLOG</h1>
+            <button>SUBSCRIBE</button>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-1">
+            <div class="c1r1">
+                <h2>TITLE HEADING</h2>
+                <h3>Title description, <span style="color: grey; margin-left: 5px; background-color: white;">May 2, 2016</span></h3>
+                <div class="title-img1"></div>
+                <p><b>More Hats!</b> I am crazy about hats these days, some text abourt this blog entry. Fashion fashion and mauris neque quem, fermentum ut nisl vitae, convallis maximus nisl. send mattis nunc id Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eligendi molestiae. Velit natus atque ipsam est quasi neque dolor rem, odio optio distinctio consequatur explicabo culpa eos nulla non ad!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vero adipisci provident ducimus mollitia, minus eligendi consequatur quam, quae numquam laborum eos non autem at quod sed fugiat accusantium. Alias.</p>
+                <div class="like-box">
+                    <button class="like"><div class="box1"></div><h4>Like</h4></button>
+                    <button class="reply">Replies
+                        <div class="box">1</div>
+                    </button>
+                </div>
+                <div class="comment">
+                    <div class="com-img"></div>
+                    <div class="com-txt">
+                        <p><strong>George</strong><span class="ct">May 3, 2015, 6:32 PM</span> </p>
+                        <p>Great blog post! Following</p>
+                    </div>
+    
+                </div>
+
+            </div>
+            <div class="c1r1">
+                <h2>TITLE HEADING</h2>
+                <h3>Title description,<span style="color: grey; margin-left: 5px; background-color: white;">April 23, 2016</span></h3>
+                <div class="title-img2"></div>
+                <p><b>Hats!</b> The trend this summer is hats for mens!</p>
+                <p>Some text about this blog entry. Fashion fashion and Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, atque sunt officiis aut exercitationem fugit optio incidunt maiores excepturi, nesciunt voluptates magnam suscipit quae rerum, tempora commodi officia autem in?</p>
+
+                <div class="like-box">
+                    <button class="like"><div class="box1"></div><h4>Like</h4></button>
+                    <button class="reply">Replies
+                        <div class="box">1</div>
+                    </button>
+                </div>
+               
+            </div>
+            <div class="c1r1">
+                <h2>TITLE HEADING</h2>
+                <h3>Title description, <span style="color: grey; margin-left: 5px; background-color: white;">April 7, 2016</span></h3>
+                <div class="title-img3"></div>
+                <p><b>Dont miss!</b> The runway in New York City this weekend is gonna be legendary</p>
+                <p>Some text about this blog entry. Fashion fashion and Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, atque sunt officiis aut exercitationem fugit optio incidunt maiores excepturi, nesciunt voluptates magnam suscipit quae rerum, tempora commodi officia autem in?</p>
+
+                <div class="like-box">
+                    <button class="like"><div class="box1"></div><h4>Like</h4></button>
+                    <button class="reply">Replies
+                        <div class="box">1</div>
+                    </button>
+                </div>
+               
+            </div>
+    
+        </div>
+        <div class="col-2">
+            <div class="con1">
+                <h2>My Name</h2>
+                <p>Just me, myself and I, exploring the universe of unknownmwnt. I have a heart of love and a intrest of lorem ipsum and mauris neque quam blog. I want to share my word with you.</p>
+            </div>
+            <div class="con2h">
+              <h2>Popular Posts</h2>
+            </div>
+            <div class="con2">
+                <div class="b-i1"></div>
+                <div class="b-t"><h4>Denim</h4><p>Sed mattis nunc</p></div>
+            </div>
+            <div class="con2">
+                <div class="b-i2"></div>
+                <div class="b-t"><h4>Sweaters</h4><p>Praes tinci sed</p></div>
+            </div>
+            <div class="con2">
+                <div class="b-i3"></div>
+                <div class="b-t"><h4>Workshop</h4><p>Ultricies congue</p></div>
+            </div>
+            <div class="con2">
+                <div class="b-i4"></div>
+                <div class="b-t"><h4>Trends</h4><p>Lorem ipsum dipsum</p></div>
+            </div>
+            <div class="con3">
+                <div class="ad-h"><h2>Advertise</h2></div>
+                <div class="ad-c"><p>Your AD Here</p></div>
+            </div>
+           
+            <div class="con4">
+                <div class="ad-h"><h2>Tag</h2></div>
+                <div class="tag">
+                    <button style="background-color: black; color: white; padding: 6px 6px;">Fashion</button>
+                    <button>New York</button>
+                    <button>London</button>
+                    <button>Hats</button>
+                    <button>Norway</button>
+                    <button>Sweaters</button>
+                    <button>Ideas</button>
+                    <button>Deals</button>
+                    <button>Accessories</button>
+                    <button>News</button>
+                    <button>Clothing</button>
+                    <button>Shopping</button>
+                    <button>Jeans</button>
+                    <button>Trends</button>
+                </div>
+               
+            </div> 
+            <div class="con5">
+                <div class="ad-h"><h2>Inspiration</h2></div>
+                <div class="con5-i">
+                    <div class="img1"></div>
+                    <div class="img2"></div>
+                    <div class="img3"></div>
+                    <div class="img4"></div>
+                </div>
+                
+            </div>
+            <div class="ad-h"><h2>Follow Me</h2></div>
+            <div class="follow">
+                <div class="f"></div>
+                <div class="w"></div>
+                <div class="i"></div>
+                <div class="s"></div>
+                <div class="y"></div>
+                <div class="t"></div>
+            </div>
+           
+            <div class="ad-h"><h2>Subscribe</h2></div>
+            <div class="subscribe">
+              <br><span class="s-t">Enter your e-mail below and get notified on the latest <span class="s-t">blog posts.</span></span> 
+                <input type="text" name="" placeholder="Enter e-mail"><br>
+                <button>Subscribe</button>
+            </div>
+
+           
+
+          
+
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
